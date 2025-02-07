@@ -1,68 +1,76 @@
-<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторна робота №1</title>
+    <title>Лабораторна робота з HTML</title>
 </head>
 <body>
-    <h1>Лабораторна робота №1</h1>
-    <h2>Основи побудови та публікації HTML-документів</h2>
-
-    <p>Хімічна реакція <strong>ортофосфорної кислоти</strong>: 
-        P<sub>2</sub>O<sub>5</sub> + 3H<sub>2</sub>O → H<sub>3</sub>PO<sub>4</sub>
-    </p>
-
-    <h3>Розподіл груп:</h3>
-    <ul>
-        <li>Спеціальності:
-            <ul>
-                <li>СП</li>
-                <li>КСМ</li>
-                <li>ІТ</li>
-            </ul>
-        </li>
-        <li>Траєкторії:
-            <ul>
-                <li>Перша</li>
-                <li>Друга</li>
-                <li>Третя</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h3>Прогноз погоди</h3>
-    <table border="1">
-        <tr>
-            <th>Дата</th>
-            <th>Температура (°C)</th>
-            <th>Опади</th>
-        </tr>
-        <tr>
-            <td>5 лютого</td>
-            <td>-2</td>
-            <td>Сніг</td>
-        </tr>
-        <tr>
-            <td>6 лютого</td>
-            <td>0</td>
-            <td>Хмарно</td>
-        </tr>
-        <tr>
-            <td>7 лютого</td>
-            <td>+3</td>
-            <td>Дощ</td>
-        </tr>
-    </table>
-
-    <h3>Форма пошуку</h3>
-    <form action="#" method="get">
-        <label for="search">Пошук:</label>
-        <input type="text" id="search" name="search">
-        <button type="submit">Знайти</button>
-    </form>
-
-    <h3>Посилання</h3>
-    <p>Перейти на <a href="page2.html">іншу сторінку сайту</a></p>
+    <header>
+        <h1>Ласкаво просимо на мою сторінку</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">Про сайт</a></li>
+            <li><a href="#table">Таблиця</a></li>
+            <li><a href="#form">Форма</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>Про сайт</h2>
+        <p><b>Це приклад веб-сторінки</b>, створеної в рамках лабораторної роботи.</p>
+        <p><i>Вона містить різні елементи HTML</i>, такі як списки, таблиці, форми та зображення.</p>
+    </section>
+    
+    <section>
+        <h2>Список елементів</h2>
+        <ul>
+            <li>Напівжирний текст</li>
+            <li>Курсивний текст</li>
+            <li>Символи: &alpha;, &beta;, &gamma;</li>
+        </ul>
+    </section>
+    
+    <section id="table">
+        <h2>Таблиця даних</h2>
+        <table border="1">
+            <tr>
+                <th>№</th>
+                <th>Назва</th>
+                <th>Опис</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Елемент 1</td>
+                <td>Опис першого елемента</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Елемент 2</td>
+                <td>Опис другого елемента</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="form">
+        <h2>Форма голосування</h2>
+        <form>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="vote">Виберіть варіант:</label>
+            <select id="vote" name="vote">
+                <option value="option1">Варіант 1</option>
+                <option value="option2">Варіант 2</option>
+            </select><br>
+            
+            <input type="submit" value="Надіслати">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Мій сайт. Всі права захищені.</p>
+    </footer>
 </body>
 </html>
